@@ -7,6 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index.js">
+    <script>
+        const allBtn = document.querySelectorAll('button');
+        const fun = function (e) {
+            document.getElementById('input').value += `${e.textContent}`
+        }
+        allBtn[15].addEventListener('click', function() {
+            const exp = document.getElementById('input').value;
+            document.getElementById('input').value = `${eval(exp)}`;
+        })
+        allBtn[16].addEventListener('click', function() {
+            document.getElementById('input').value = '';
+        })</script>
 </head>
 <body>
     <!-- HTML here -->
@@ -33,6 +45,8 @@
         <button id="ans">Ans</button>
         <button id="clr">Reset</button>
     </div>
-  <script src="/index.js"></script>
+  <script src="/inde66x.js">
+    
+  </script>
 </body>
 </html>
